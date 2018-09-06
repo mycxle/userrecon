@@ -502,16 +502,16 @@ fi
 
 ## Instructables
 
-printf "\e[1;77m[\e[0m\e[1;92m+\e[0m\e[1;77m] Instructables: \e[0m"
-check1=$(curl -s -i "https://www.instructables.com/member/$username" -H "Accept-Language: en" -L | grep -o '404 NOT FOUND' ; echo $?)
+#printf "\e[1;77m[\e[0m\e[1;92m+\e[0m\e[1;77m] Instructables: \e[0m"
+#check1=$(curl -s -i "https://www.instructables.com/member/$username" -H "Accept-Language: en" -L | grep -o '404 NOT FOUND' ; echo $?)
 
-if [[ $check1 == *'0'* ]] ; then 
-printf "\e[1;93mNot Found!\e[0m\n"
-elif [[ $check1 == *'1'* ]]; then 
+#if [[ $check1 == *'0'* ]] ; then 
+#printf "\e[1;93mNot Found!\e[0m\n"
+#elif [[ $check1 == *'1'* ]]; then 
 
-printf "\e[1;92m Found!\e[0m https://www.instructables.com/member/%s\n" $username
-printf "https://www.instructables.com/member/%s\n" $username >> $username.txt
-fi
+#printf "\e[1;92m Found!\e[0m https://www.instructables.com/member/%s\n" $username
+#printf "https://www.instructables.com/member/%s\n" $username >> $username.txt
+#fi
 
 ## KeyBase
 
@@ -652,8 +652,8 @@ if [[ $check1 == *'0'* ]] ; then
 printf "\e[1;93mNot Found!\e[0m\n"
 elif [[ $check1 == *'1'* ]]; then 
 
-printf "\e[1;92m Found!\e[0m https://foursquare.com/%s\n" $username
-printf "https://foursquare.com/%s\n" $username >> $username.txt
+printf "\e[1;92m Found!\e[0m https://www.roblox.com/user.aspx?username=/%s\n" $username
+printf "https://www.roblox.com/user.aspx?username=/%s\n" $username >> $username.txt
 fi
 
 ## Gumroad
@@ -671,16 +671,16 @@ fi
 
 ## Newgrounds
 
-printf "\e[1;77m[\e[0m\e[1;92m+\e[0m\e[1;77m] Newgrounds: \e[0m"
-check1=$(curl -s -i "https://$username.newgrounds.com" -H "Accept-Language: en" -L | grep -o 'HTTP/2 404 ' ; echo $?)
+#printf "\e[1;77m[\e[0m\e[1;92m+\e[0m\e[1;77m] Newgrounds: \e[0m"
+#check1=$(curl -s -i "https://$username.newgrounds.com" -H "Accept-Language: en" -L | grep -o 'HTTP/2 404 ' ; echo $?)
 
-if [[ $check1 == *'0'* ]] ; then 
-printf "\e[1;93mNot Found!\e[0m\n"
-elif [[ $check1 == *'1'* ]]; then 
+#if [[ $check1 == *'0'* ]] ; then 
+#printf "\e[1;93mNot Found!\e[0m\n"
+#elif [[ $check1 == *'1'* ]]; then 
 
-printf "\e[1;92m Found!\e[0m https://%s.newgrounds.com\n" $username
-printf "https://%s.newgrounds.com\n" $username >> $username.txt
-fi
+#printf "\e[1;92m Found!\e[0m https://%s.newgrounds.com\n" $username
+#printf "https://%s.newgrounds.com\n" $username >> $username.txt
+#fi
 
 ## Wattpad
 
@@ -710,16 +710,16 @@ fi
 
 ## CreativeMarket
 
-printf "\e[1;77m[\e[0m\e[1;92m+\e[0m\e[1;77m] CreativeMarket: \e[0m"
-check1=$(curl -s -i "https://creativemarket.com/$username" -H "Accept-Language: en" -L | grep -o '404eef72' ; echo $?)
+#printf "\e[1;77m[\e[0m\e[1;92m+\e[0m\e[1;77m] CreativeMarket: \e[0m"
+#check1=$(curl -s -i "https://creativemarket.com/$username" -H "Accept-Language: en" -L | grep -o '404eef72' ; echo $?)
 
-if [[ $check1 == *'0'* ]] ; then 
-printf "\e[1;93mNot Found!\e[0m\n"
-elif [[ $check1 == *'1'* ]]; then 
+#if [[ $check1 == *'0'* ]] ; then 
+#printf "\e[1;93mNot Found!\e[0m\n"
+#elif [[ $check1 == *'1'* ]]; then 
 
-printf "\e[1;92m Found!\e[0m https://creativemarket.com/%s\n" $username
-printf "https://creativemarket.com/%s\n" $username >> $username.txt
-fi
+#printf "\e[1;92m Found!\e[0m https://creativemarket.com/%s\n" $username
+#printf "https://creativemarket.com/%s\n" $username >> $username.txt
+#fi
 
 ## Trakt
 
@@ -801,16 +801,16 @@ fi
 
 ## Houzz
 
-printf "\e[1;77m[\e[0m\e[1;92m+\e[0m\e[1;77m] Houzz: \e[0m"
-check1=$(curl -s -i "https://houzz.com/user/$username" -H "Accept-Language: en" -L | grep -o 'an error has occurred' ; echo $?)
+#printf "\e[1;77m[\e[0m\e[1;92m+\e[0m\e[1;77m] Houzz: \e[0m"
+#check1=$(curl -s -i "https://houzz.com/user/$username" -H "Accept-Language: en" -L | grep -o 'an error has occurred' ; echo $?)
 
-if [[ $check1 == *'0'* ]] ; then 
-printf "\e[1;93mNot Found!\e[0m\n"
-elif [[ $check1 == *'1'* ]]; then 
+#if [[ $check1 == *'0'* ]] ; then 
+#printf "\e[1;93mNot Found!\e[0m\n"
+#elif [[ $check1 == *'1'* ]]; then 
 
-printf "\e[1;92m Found!\e[0m https://houzz.com/user/%s\n" $username
-printf "https://houzz.com/user/%s\n" $username >> $username.txt
-fi
+#printf "\e[1;92m Found!\e[0m https://houzz.com/user/%s\n" $username
+#printf "https://houzz.com/user/%s\n" $username >> $username.txt
+#fi
 
 ## blip.fm
 
@@ -946,16 +946,16 @@ fi
 
 ## Slack
 
-printf "\e[1;77m[\e[0m\e[1;92m+\e[0m\e[1;77m] Slack: \e[0m"
-check1=$(curl -s -i "https://$username.slack.com" -H "Accept-Language: en" -L | grep -o 'HTTP/2 404\|404 Not Found' ; echo $?)
+#printf "\e[1;77m[\e[0m\e[1;92m+\e[0m\e[1;77m] Slack: \e[0m"
+#check1=$(curl -s -i "https://$username.slack.com" -H "Accept-Language: en" -L | grep -o 'HTTP/2 404\|404 Not Found' ; echo $?)
 
-if [[ $check1 == *'0'* ]] ; then 
-printf "\e[1;93mNot Found!\e[0m\n"
-elif [[ $check1 == *'1'* ]]; then 
+#if [[ $check1 == *'0'* ]] ; then 
+#printf "\e[1;93mNot Found!\e[0m\n"
+#elif [[ $check1 == *'1'* ]]; then 
 
-printf "\e[1;92m Found!\e[0m https://%s.slack.com\n" $username
-printf "https://%s.slack.com\n" $username >> $username.txt
-fi
+#printf "\e[1;92m Found!\e[0m https://%s.slack.com\n" $username
+#printf "https://%s.slack.com\n" $username >> $username.txt
+#fi
 
 ## OkCupid
 
